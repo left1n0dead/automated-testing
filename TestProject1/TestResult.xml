@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="3" result="Failed" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-07-28 22:17:09Z" end-time="2021-07-28 22:17:11Z" duration="2.050578">
+  <command-line><![CDATA[nunit3-console.exe  TestProject1.dll]]></command-line>
+  <test-suite type="Assembly" id="1-1004" name="TestProject1.dll" fullname="C:\net48\TestProject1.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-28 22:17:10Z" end-time="2021-07-28 22:17:11Z" duration="1.403474" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.18363.0" platform="Win32NT" cwd="C:\net48" machine-name="DESKTOP-0CFUGAJ" user="Даниил" user-domain="DESKTOP-0CFUGAJ" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\net48" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.8" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="25204" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1005" name="TestProject1" fullname="TestProject1" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-28 22:17:10Z" end-time="2021-07-28 22:17:11Z" duration="1.386272" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="Tests" fullname="TestProject1.Tests" classname="TestProject1.Tests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-28 22:17:10Z" end-time="2021-07-28 22:17:11Z" duration="1.382348" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1002" name="ChannelsInConfigCount" fullname="TestProject1.Tests.ChannelsInConfigCount" methodname="ChannelsInConfigCount" classname="TestProject1.Tests" runstate="Runnable" seed="409803561" result="Failed" start-time="2021-07-28 22:17:10Z" end-time="2021-07-28 22:17:11Z" duration="1.321255" asserts="0">
+          <failure>
+            <message><![CDATA[ERROR: TooFewChannels: 5]]></message>
+            <stack-trace><![CDATA[   в TestProject1.Tests.ChannelsInConfigCount() в C:\Users\Даниил\source\repos\TestProject1\TestProject1\UnitTest1.cs:строка 123
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[ERROR: TooFewChannels: 5]]></message>
+              <stack-trace><![CDATA[   в TestProject1.Tests.ChannelsInConfigCount() в C:\Users\Даниил\source\repos\TestProject1\TestProject1\UnitTest1.cs:строка 123
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1001" name="RetryIsFiredDueToTimeout" fullname="TestProject1.Tests.RetryIsFiredDueToTimeout" methodname="RetryIsFiredDueToTimeout" classname="TestProject1.Tests" runstate="Runnable" seed="185505105" result="Passed" start-time="2021-07-28 22:17:11Z" end-time="2021-07-28 22:17:11Z" duration="0.033527" asserts="0">
+          <output><![CDATA[Local time: 28.07.2021 22:17:11
+Requested server time: 28.07.2021 17:17:14
+The difference: 3s.
+]]></output>
+        </test-case>
+        <test-case id="1-1003" name="RetryIsFiredDueToTimeout_2" fullname="TestProject1.Tests.RetryIsFiredDueToTimeout_2" methodname="RetryIsFiredDueToTimeout_2" classname="TestProject1.Tests" runstate="Runnable" seed="1026306956" result="Passed" start-time="2021-07-28 22:17:11Z" end-time="2021-07-28 22:17:11Z" duration="0.018321" asserts="0">
+          <output><![CDATA[Local time: 28.07.2021 22:17:11
+Requested server time: 28.07.2021 17:17:14
+The difference: 3s.
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
